@@ -14,14 +14,16 @@ Summary: A comprehensive package for structural multivariate function estimation
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/r-gss-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/r-gss-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/r-gss-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/r-gss-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/r-gss-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/r-gss-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-gss-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-gss-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/r-gss-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-gss-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-gss-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-gss-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-gss/badges/version.svg)](https://anaconda.org/conda-forge/r-gss)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-gss/badges/downloads.svg)](https://anaconda.org/conda-forge/r-gss)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r--gss-green.svg)](https://anaconda.org/conda-forge/r-gss) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-gss.svg)](https://anaconda.org/conda-forge/r-gss) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-gss.svg)](https://anaconda.org/conda-forge/r-gss) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-gss.svg)](https://anaconda.org/conda-forge/r-gss) |
 
 Installing r-gss
 ================
