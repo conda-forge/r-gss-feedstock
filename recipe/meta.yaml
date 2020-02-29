@@ -1,4 +1,4 @@
-{% set version = "2.1-10" %}
+{% set version = "2.1-11" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,11 +12,11 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/gss_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/gss/gss_{{ version }}.tar.gz
-  sha256: 26c47ecae6a9b7854a1b531c09f869cf8b813462bd8093e3618e1091ace61ee2
+  sha256: 584b1953a2814a99e617d3c306c94e1f15c15452eb4c1566bf1111407092dcf5
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -42,10 +42,9 @@ test:
 about:
   home: https://CRAN.R-project.org/package=gss
   license: GPL (>= 2)
-  summary: A comprehensive package for structural multivariate function estimation using smoothing
-    splines.
+  summary: A comprehensive package for structural multivariate function estimation using smoothing splines.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
