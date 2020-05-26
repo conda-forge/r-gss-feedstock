@@ -1,4 +1,4 @@
-{% set version = "2.2-1" %}
+{% set version = "2.2-2" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/gss_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/gss/gss_{{ version }}.tar.gz
-  sha256: 9e595981a151d02a8d5018b1809a3e7153c0516f73d19e11bc77d83b88a3d2e9
+  sha256: 1da4da894378ee730cff9628e8b4d2a0d7dfa344b94e5bce6953e66723c21fe4
 
 build:
   merge_build_host: true  # [win]
