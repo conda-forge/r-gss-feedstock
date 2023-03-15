@@ -1,11 +1,22 @@
+About r-gss-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-gss-feedstock/blob/main/LICENSE.txt)
+
 About r-gss
-===========
+-----------
 
 Home: https://CRAN.R-project.org/package=gss
 
 Package license: GPL-2.0-or-later
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-gss-feedstock/blob/main/LICENSE.txt)
+Summary: A comprehensive package for structural multivariate function estimation using smoothing splines.
+About r-gss
+-----------
+
+Home: https://CRAN.R-project.org/package=gss
+
+Package license: GPL-2.0-or-later
 
 Summary: A comprehensive package for structural multivariate function estimation using smoothing splines.
 
