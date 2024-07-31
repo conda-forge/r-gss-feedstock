@@ -1,5 +1,4 @@
 {% set version = "2.2-7" %}
-
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -7,7 +6,6 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: gss_{{ version }}.tar.gz
   url:
     - https://cran.r-project.org/src/contrib/gss_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/gss/gss_{{ version }}.tar.gz
@@ -21,20 +19,21 @@ build:
 
 requirements:
   build:
-    - cross-r-base {{ r_base }}  # [build_platform != target_platform]
+    - cross-r-base {{ r_base }}        # [build_platform != target_platform]
     - {{ compiler('fortran') }}        # [unix]
     - {{ compiler('m2w64_fortran') }}  # [win]
-    - {{ compiler('c') }}        # [unix]
-    - {{ stdlib("c") }}          # [unix]
-    - {{ compiler('m2w64_c') }}  # [win]
-    - {{ stdlib("m2w64_c") }}    # [win]
+    - {{ compiler('c') }}              # [unix]
+    - {{ stdlib("c") }}                # [unix]
+    - {{ compiler('m2w64_c') }}        # [win]
+    - {{ stdlib("m2w64_c") }}          # [win]
     - {{ posix }}make
-    - {{ posix }}coreutils       # [win]
-    - {{ posix }}sed             # [win]
-    - {{ posix }}zip             # [win]
+    - {{ posix }}coreutils             # [win]
+    - {{ posix }}sed                   # [win]
+    - {{ posix }}zip                   # [win]
   host:
     - r-base
-
+    - libblas
+    - liblapack
   run:
     - r-base
 
@@ -48,7 +47,9 @@ about:
   license: GPL-2.0-or-later
   summary: A comprehensive package for structural multivariate function estimation using smoothing splines.
   license_family: GPL2
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
