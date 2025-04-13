@@ -1,4 +1,4 @@
-{% set version = "2.2-8" %}
+{% set version = "2.2-9" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/gss_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/gss/gss_{{ version }}.tar.gz
-  sha256: b31b2ce2dab4ff5a070009c9623c2f3f191c049372516b6902c12ed5e6e76e4e
+  sha256: 6ea16559c1507511a496dc4200e5b67c882017f5d230d681467b668405e80e47
 
 build:
   number: 0
